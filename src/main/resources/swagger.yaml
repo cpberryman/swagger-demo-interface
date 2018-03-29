@@ -15,10 +15,15 @@ paths:
       operationId: create
       requestBody:
         required: true
+        parameters:
+        - in: body
+          name: customer
+          schema:
+            $ref: '#/definitions/customer'
         content:
           application/json:
             schema:
-            $ref: '#/definitions/customer'
+              $ref: '#/definitions/customer'
       produces:
       - application/json
       responses:

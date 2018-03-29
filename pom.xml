@@ -57,25 +57,6 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-            <!--<plugin>-->
-                <!--<groupId>org.codehaus.mojo</groupId>-->
-                <!--<artifactId>build-helper-maven-plugin</artifactId>-->
-                <!--<version>1.9.1</version>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<id>add-generated-source</id>-->
-                        <!--<phase>initialize</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>add-source</goal>-->
-                        <!--</goals>-->
-                        <!--<configuration>-->
-                            <!--<sources>-->
-                                <!--<source>src/gen/java/main</source>-->
-                            <!--</sources>-->
-                        <!--</configuration>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
         </plugins>
     </build>
 
