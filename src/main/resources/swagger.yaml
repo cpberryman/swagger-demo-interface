@@ -1,0 +1,58 @@
+swagger: '2.0'
+info:
+  title: 'Customer Service API'
+  description: 'Demo Swagger interface as seperate module'
+  version: "1.0"
+
+host: localhost:8080
+basePath: /
+schemes:
+- http
+paths:
+  /customers/create:
+    post:
+      description: 'Add new customer'
+      operationId: create
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+            $ref: '#/definitions/customer'
+      produces:
+      - application/json
+      responses:
+        200:
+          schema:
+            $ref: '#/definitions/customer'
+
+  /customers/find/{id}:
+    get:
+      description: 'get customer by id'
+      operationId: find
+      parameters:
+        - name: id
+          in: path
+          required: true
+          type: integer
+      produces:
+      - application/json
+      responses:
+        200:
+          schema:
+            $ref: '#/definitions/customer'
+
+definitions:
+  customer:
+    type: object
+    properties:
+      id:
+        type: integer
+      name:
+        type: string
+      surname:
+        type: string
+
+
+
+

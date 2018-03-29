@@ -1,0 +1,1 @@
+Swagger interface for https://github.com/cpberryman/swagger-demo.git which demonstrates how a seperate module can be added to an existing project to document it's api and model
